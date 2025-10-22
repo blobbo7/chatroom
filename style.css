@@ -1,0 +1,50 @@
+.top
+{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 30px;
+    width: 200px;
+    height: 40px;
+    background-color: rgb(168, 221, 76);
+    text-align: center;
+    border-style: inset;
+    border-color: black;
+    
+}
+
+.msg
+{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-color: rgb(168, 221, 76);
+    height: 300px; overflow-y: auto;
+    border-style: inset;
+    border-color: black;
+    scrollbar-width: none;
+}
+
+.wall
+{
+    background-color: blueviolet;
+}
+
+.button
+{
+    background-color: rgb(168, 221, 76);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    height: 30px;
+    width: 120px;
+    text-align: justify;
+    border-color: black;
+}
+
+.innerplane
+{
+    width: 20px;
+    position: absolute;
+    transform: translateX(5px);
+}
+
+.type
+{
+    background-color: rgb(168, 221, 76);
+    border-color: black;
+}
