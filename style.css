@@ -4,7 +4,7 @@
     font-size: 30px;
     width: 200px;
     height: 40px;
-    background-color: rgb(168, 221, 76);
+    background-color: #FFC401;
     text-align: center;
     border-style: inset;
     border-color: black;
@@ -14,7 +14,7 @@
 .msg
 {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    background-color: rgb(168, 221, 76);
+    background-color: #FFC401;
     height: 300px; overflow-y: auto;
     border-style: inset;
     border-color: black;
@@ -23,12 +23,12 @@
 
 .wall
 {
-    background-color: blueviolet;
+    background-color: #068899;
 }
 
 .button
 {
-    background-color: rgb(168, 221, 76);
+    background-color: #FFC401;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     height: 30px;
     width: 120px;
@@ -45,6 +45,6 @@
 
 .type
 {
-    background-color: rgb(168, 221, 76);
+    background-color: #FFC401;
     border-color: black;
 }
