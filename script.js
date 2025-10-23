@@ -34,6 +34,8 @@ if (msg.timestamp) {
   msgEl.innerHTML = `${msg.user}: ${msg.text} ${timeHtml}`;
   if (msg.admin === 1) {msgEl.style.color = "red"; msgEl.innerHTML = `${msg.user}: ${msg.text} <span style="color: purple;">&lt;--owner</span> ${timeHtml}`;}
   if (msg.admin === 2) msgEl.style.color = "blue";
+  if (msg.admin === 3) msgEl.style.color = "green";
+
 
   messagesDiv.appendChild(msgEl);
   messagesDiv.scrollTop = messagesDiv.scrollHeight;
@@ -97,3 +99,4 @@ async function startApp() {
 
 const messagesDiv = document.getElementById("messages");
 startApp();
+
