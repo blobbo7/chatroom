@@ -1,7 +1,7 @@
 // Ping backend to wake it up
 async function wakeBackend() {
   try {
-    const res = await fetch("https://cahtroom-rtnv.onrender.com/ping", { cache: "no-store" });
+    const res = await fetch("https://ihgserver.ooguy.com/ping", { cache: "no-store" });
     if (res.ok) {
       console.log("backend is awake");
     } else {
@@ -47,7 +47,7 @@ async function startApp() {
 
   // Load old messages first
   try {
-    const res = await fetch("https://cahtroom-rtnv.onrender.com/messages");
+    const res = await fetch("https://ihgserver.ooguy.com/messages");
     const messages = await res.json();
     messages.forEach(addMessage);
   } catch (err) {
@@ -55,7 +55,7 @@ async function startApp() {
   }
 
   // Connect to socket for new messages
-  const socket = io("https://cahtroom-rtnv.onrender.com", {
+  const socket = io("https://ihgserver.ooguy.com", {
     reconnectionAttempts: Infinity,
     reconnectionDelay: 2000,
   });
@@ -82,7 +82,7 @@ async function startApp() {
     const user = usernameInput.value;
     const password = passwordInput.value;
 
-    const res = await fetch("https://cahtroom-rtnv.onrender.com/send", {
+    const res = await fetch("https://ihgserver.ooguy.com/send", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({ text, user, password }),
@@ -99,4 +99,5 @@ async function startApp() {
 
 const messagesDiv = document.getElementById("messages");
 startApp();
+
 
